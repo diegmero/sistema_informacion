@@ -1,3 +1,6 @@
+// @ts-ignore
+import logoImage from './extensions/Logo-Alcaldia-Texto.webp';
+
 const config = {
   locales: [
     // 'ar',
@@ -27,6 +30,18 @@ const config = {
     // 'zh-Hans',
     // 'zh',
   ],
+  translations: {
+    en: {
+      "Auth.form.welcome.title": "Bienvenidos a Fomento",
+      "Auth.form.welcome.subtitle": "Inicia sesión para comenzar",
+    },
+  },
+  auth: {
+    logo: logoImage,
+  },
+  menu: {
+    logo: logoImage,
+  },
 };
 
 const bootstrap = (app) => {

@@ -1,61 +1,84 @@
-# 🚀 Getting started with Strapi
+# Sistema de Gestión - Alcaldía de Fomento
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
+## 📌 Descripción del Proyecto
 
-### `develop`
+Este proyecto es un sistema de gestión desarrollado para la Alcaldía de Fomento. Proporciona una plataforma robusta para administrar diversos aspectos de las operaciones municipales, incluyendo la gestión de emprendedores, eventos y mercados campesinos.
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)
+## 🛠 Tecnologías Utilizadas
 
-```
-npm run develop
-# or
-yarn develop
-```
+- **Backend**: [Strapi](https://strapi.io/) (v4.x)
+- **Base de Datos**: SQLite (en desarrollo), PostgreSQL (en producción)
+- **Lenguaje de Programación**: JavaScript (Node.js)
+- **ORM**: Bookshelf.js (incluido con Strapi)
+- **Autenticación**: JWT (JSON Web Tokens)
 
-### `start`
+## 🚀 Características Principales
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-start)
+- Gestión de Emprendedores
+- Administración de Eventos
+- Coordinación de Mercados Campesinos
+- Panel de Administración Personalizado
+- API RESTful para integración con frontend
 
-```
-npm run start
-# or
-yarn start
-```
+## 📋 Requisitos Previos
 
-### `build`
+Antes de comenzar, asegúrate de tener instalado:
 
-Build your admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-build)
+- Node.js (v14 o superior)
+- npm (v6 o superior) o yarn
 
-```
-npm run build
-# or
-yarn build
-```
+## 🔧 Instalación y Configuración
 
-## ⚙️ Deployment
+1. Clona el repositorio:
 
-Strapi gives you many possible deployment options for your project including [Strapi Cloud](https://cloud.strapi.io). Browse the [deployment section of the documentation](https://docs.strapi.io/dev-docs/deployment) to find the best solution for your use case.
 
-```
-yarn strapi deploy
-```
+2. Instala las dependencias:
 
-## 📚 Learn more
+- npm install o yarn install
 
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://strapi.io/blog) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
 
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
+3. Configura las variables de entorno:
+- Copia el archivo `.env.example` a `.env`
+- Ajusta las variables según tu entorno local
 
-## ✨ Community
+4. Ejecuta las migraciones de la base de datos:
 
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
+- npm run strapi database:migrate
+- yarn strapi database:migrate
 
----
 
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+
+## 🏃‍♂️ Ejecutando la Aplicación
+
+Para iniciar la aplicación en modo de desarrollo:
+- npm run develop
+- yarn develop
+
+
+La aplicación estará disponible en `http://localhost:1337`.
+
+Para acceder al panel de administración, visita `http://localhost:1337/admin`.
+
+## 🧪 Pruebas
+
+Para ejecutar las pruebas:
+
+- npm run test
+- yarn test
+
+
+## 📚 Documentación Adicional
+
+Para más información sobre cómo usar y extender este proyecto consulta al email diegmero12@gmail.com
+
+## 🤝 Contribución
+
+Las contribuciones están cerradas no autorizadas ya que es un proyecto institucional, si desea descargue el repositorio y modifiquelo localmente eliminando el archivo .git
+
+## 📄 Licencia
+
+Este proyecto actualmente no tiene licencia. Consulta el archivo diegmero12@gmail.com para más detalles.
+
+## 📞 Contacto
+
+Para cualquier consulta, por favor contacteme Diego Romero en admin@heitic.com
