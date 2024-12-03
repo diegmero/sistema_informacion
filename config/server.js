@@ -9,4 +9,5 @@ module.exports = ({ env }) => ({
       secret: env('ADMIN_JWT_SECRET'),
     },
   },
+  url: env('PUBLIC_URL', 'https://sistema-informacion.onrender.com'), 
 });
