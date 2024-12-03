@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "asesorias",
+  "info": {
+    "singularName": "asesoria",
+    "pluralName": "asesorias",
+    "displayName": "Asesoria"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Fecha": {
+      "type": "date"
+    },
+    "TipoAsesoria": {
+      "type": "string"
+    },
+    "Descripcion": {
+      "type": "text"
+    },
+    "emprendedor": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::emprendedor.emprendedor",
+      "inversedBy": "asesorias"
+    }
+  }
+}

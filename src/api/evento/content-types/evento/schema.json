@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "eventos",
+  "info": {
+    "singularName": "evento",
+    "pluralName": "eventos",
+    "displayName": "Evento",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titulo": {
+      "type": "string"
+    },
+    "Descripcion": {
+      "type": "text"
+    },
+    "Fecha": {
+      "type": "date"
+    },
+    "Hora": {
+      "type": "time"
+    },
+    "Lugar": {
+      "type": "string"
+    },
+    "Tipo": {
+      "type": "enumeration",
+      "enum": [
+        "taller,",
+        "charla,",
+        "asesoria,",
+        "mercado_campesino"
+      ]
+    },
+    "Cupo_maximo": {
+      "type": "integer"
+    },
+    "emprendedores": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::emprendedor.emprendedor",
+      "mappedBy": "eventos"
+    }
+  }
+}

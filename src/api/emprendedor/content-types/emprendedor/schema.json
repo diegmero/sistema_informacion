@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "emprendedores",
+  "info": {
+    "singularName": "emprendedor",
+    "pluralName": "emprendedores",
+    "displayName": "Emprendedor",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nombre": {
+      "type": "string"
+    },
+    "Apellido": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Telefono": {
+      "type": "string"
+    },
+    "NombreDelEmprendimiento": {
+      "type": "string"
+    },
+    "DescripcionDelEmprendimiento": {
+      "type": "text"
+    },
+    "Sector": {
+      "type": "string"
+    },
+    "eventos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::evento.evento",
+      "inversedBy": "emprendedores"
+    },
+    "Cedula": {
+      "type": "string",
+      "unique": true
+    },
+    "mercados_campesinos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::mercado-campesino.mercado-campesino",
+      "mappedBy": "participantes"
+    },
+    "asesorias": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::asesoria.asesoria",
+      "mappedBy": "emprendedor"
+    }
+  }
+}

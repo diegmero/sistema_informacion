@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mercado_campesinos",
+  "info": {
+    "singularName": "mercado-campesino",
+    "pluralName": "mercado-campesinos",
+    "displayName": "Mercado Campesino"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Fecha": {
+      "type": "date"
+    },
+    "Hora": {
+      "type": "time"
+    },
+    "Lugar": {
+      "type": "string"
+    },
+    "Tiempo": {
+      "type": "integer"
+    },
+    "Descripcion": {
+      "type": "text"
+    },
+    "participantes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::emprendedor.emprendedor",
+      "inversedBy": "mercados_campesinos"
+    }
+  }
+}
